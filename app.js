@@ -1,7 +1,7 @@
 const express = require('express');
 const cheerio = require('cheerio');
 const axios = require('axios');
-const PORT = 5000;
+let PORT = process.env.PORT || 4000;
 const app = express();
 
 
@@ -37,7 +37,7 @@ app.use('/', (req, res, error) => {
           views: $views
         }
 
-        items.push(post)
+        items.push(post);
 
       })
       res.json(items)
