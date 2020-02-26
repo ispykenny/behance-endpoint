@@ -1,0 +1,16 @@
+{
+  "name": "behance-endpoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "cherio": "^1.0.0-rc.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
