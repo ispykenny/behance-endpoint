@@ -24,9 +24,10 @@ app.use('/', (req, res, error) => {
         let $src = $this.find('img').attr('src');
         let $link = $this.find('.js-project-link').attr('href');
         let $userImage = $this.find('.OwnersNeue-ownerImage-2kF').find('img').attr('src');
-        let $name = $this.find('.OwnersNeue-ownerImage-2kF').next().text();
+        let $name = $this.find('.e2e-Owner-user-link').text();
         let $likes = $this.find('.Stats-stats-1iI').find('span').eq(0).text();
         let $views = $this.find('.Stats-stats-1iI').find('span').eq(1).text();
+
 
         let post = {
           preview_image: $src,
